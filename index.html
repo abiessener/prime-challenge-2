@@ -1,0 +1,182 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Adam M Biessener</title>
+  <meta name="description" content="Adam Biessener - Resume Example for Prime Academy">
+  <meta name="author" content="Adam Biessener">
+
+  <link rel="stylesheet" href="solarized_dark.css" id="stylesheet">
+</head>
+
+<body>
+
+<button id="switchCSS_light" align="right" style="position:absolute;right:5%;background:transparent;border:none" onclick="switchCSS()" >
+  <img id="buttonImage" src="lightswitch_70px_off.png" />
+</button>
+
+<script>
+
+  var currentStyle = "light"
+
+  function switchCSS() {
+    if (currentStyle == "light") {
+      enableDark();
+    }
+    else enableLight();
+  }
+
+  function enableLight() {
+    var stylesheet = document.getElementById("stylesheet");
+    stylesheet.setAttribute('href', "solarized_light.css");
+    document.getElementById("buttonImage").src = "lightswitch_70px_on.png";
+    currentStyle = "light";
+  }
+
+  function enableDark() {
+    var stylesheet = document.getElementById("stylesheet");
+    stylesheet.setAttribute('href', "solarized_dark.css");
+    document.getElementById("buttonImage").src = "lightswitch_70px_off.png";
+    currentStyle = "dark";
+  }
+
+</script>
+
+  <h1>Adam M Biessener</h1>
+
+  <div class="subhead">4252 Chicago Ave, Minneapolis MN 55407 | abiessener@gmail.com | (651)208-9569</div>
+
+  <h2>Digital Project Manager</h2>
+  <p>Multi-disciplinary professional with 13 years of experience in managing production of digital products and multimedia content. Experienced with leading all aspects of modern collaborative digital production, with a track record of delivering marketing, consumer, and B2B products that meet requirements, on-time and on-budget.</p>
+
+  <div class="tab">
+    <button class="tablinks" onclick="openTopTab(event, 'Skills')" id="defaultOpen">Skills</button>
+    <button class="tablinks" onclick="openTopTab(event, 'Technical Skills')" >Technical Skills</button>
+    <button class="tablinks" onclick="openTopTab(event, 'Education')">Education</button>
+  </div>
+
+  <div id="Skills" class="tabcontent">
+    <h3>Skills</h3>
+    <p>
+        End-to-end project management<br/>
+        Comprehensive go-to-market planning<br/>
+        Multimedia content creation & management<br/>
+        Inter-disciplinary communication<br/>
+        Inter-team planning and management <br/>
+        Development risk assessment<br/>
+        Roadblock analysis and avoidance<br/>
+        Internal/external customer relations<br/>
+        Messaging development<br/>
+        Stakeholder communication<br/>
+        KPI development/tracking<br/>
+        Channel analysis<br/>
+        Editing (AP Style)<br/>
+      </ul>
+    </p>
+  </div>
+
+  <div id="Technical Skills" class="tabcontent">
+    <h3>Technical Skills</h3>
+    <p>
+        Google Drive/Docs<br/>
+        MS Office<br/>
+        MS VBA<br/>
+        Perforce Helix<br/>
+        XML/HTML (basic)<br/>
+        C/C++ (basic)<br/>
+        Visual Studio (basic)<br/>
+        Fogbugz<br/>
+        Sublime Text<br/>
+        Photoshop<br/>
+        GIMP<br/>
+        Premiere<br/>
+        Audacity<br/>
+        XSplit<br/>
+    </p>
+  </div>
+
+  <div id="Education" class="tabcontent">
+    <h3>Education</h3>
+    <p>Associate of Arts – 2003 Century College, White Bear Lake, MN</p>
+  </div>
+
+  <script>
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+
+  function openTopTab(evt, contentName) {
+      // Declare all variables
+      var i, tabcontent, tablinks;
+
+      // Get all elements with class="tabcontent" and hide them
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+      }
+
+      // Get all elements with class="tablinks" and remove the class "active"
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      // Show the current tab, and add an "active" class to the button that opened the tab
+      document.getElementById(contentName).style.display = "inline-block";
+      evt.currentTarget.className += " active";
+  }
+  </script>
+
+
+  <h2>Career Summary</h2>
+	  <h3>Stardock, Content Lead – Ashes of the Singularity | March 2015 – March 2017</h3>
+	  <p>
+	    <ul>
+	      <li><em>Product Development</em> – Planned and produced more than a dozen successful individual product releases over a 15-month period</li>
+	      <li><em>Team Leadership</em> – Coordinated art, engineering, and design teams to meet aggressive product release schedule</li>
+	      <li><em>Creative Development</em> – Developed, produced, and edited gameplay & dialogue scripts for multiple interlocking story arcs</li>
+	      <li><em>Marketing Support</em> – Concepted and produced visual & textual marketing assets to support releases, and evaluated materials produced by marketing team for accuracy and messaging</li>
+	      <li><em>QA Leadership</em> – Provided detailed repro cases to software QA team, worked with QA to document and fix bugs/inconsistencies</li>
+	      <li><em>Engineering Evaluation</em> – Evaluated and provided clear feedback to engineering team to ensure new features were conceived and implemented appropriately to project needs </li>
+	      <li><em>Engineering Support</em> – Modified codebase to support design objectives where appropriate, and provided detailed and actionable feedback to engineering </li>
+	      <li><em>UI Leadership</em> – Designed aspects of user interface, wrote and edited textual elements, guided engineering and art teams to create unified and excellent user interface</li>
+	      <li><em>Stage Presentation</em> – Presented on-stage at Electronics Entertainment Expo with strategic partners (AMD, Intel, Microsoft) highlighting Ashes technological and creative achievements</li>
+	      <li><em>Media Demonstrations</em> – Provided top-tier enthusiast media demo walkthroughs and interviews with on-brand content for Ashes at Game Developers Conference</li>
+	    </ul>
+	  </p>
+
+	  <h3>Stardock, Brand Manager | September 2013 – March 2015</h3>
+	  <p>
+	    <ul>
+	      <li>Project Management</em> – End-to-end leadership of multiple teams creating marketing products that tripled previous pre-sale records</li>
+	      <li>Process/Workflow Creation - Streamlined content-creation and communication workflows to enable launching four unique brands to market within a year </li>
+	      <li>Product Visibility</em> – Increased launch-window impressions by 10x over previous Stardock records</li>
+	      <li>Product Launch Management</em> – Led go-to-market planning and release management, ensuring all teams had all roadblocks dealt with to make for smooth release days </li>
+	      <li>Stakeholder Management</em> – Ensured stakeholder requirements were met and communication lines open throughout development and post-release</li>
+	      <li>Audience Analysis</em> – Performed qualitative analysis of core and growth audiences to align brand messaging efforts</li>
+	      <li>Gap Analysis</em> – Evaluated consumer and marketing products to identify missed opportunities for onboarding new customers or increasing engagement of existing audiences</li>
+	      <li>Message Development</em> – Used qualitative and quantitative resources and analysis to develop appropriate brand messaging for multiple products across all audiences and channels</li>
+	      <li>External Partner Interfacing</em> – Worked with external partners at AMD, Intel, and Microsoft to align brand messaging and ensure objectives for all stakeholders were met by co-marketing initiatives</li>
+	      <li>Risk Assessment and Management</em> – Identified tasks within projects that endangered KPI metrics and release dates/milestones, and developed alternate plans to mitigate</li>
+	      <li>Channel Analysis</em> – Combined qualitative and quantitative evaluations to match marketing/outreach channels with audience and message to maximize effectiveness</li>
+	      <li>Social Growth</em> – Developed and executed social channel growth plan that increased engagement across Facebook, Twitch, YouTube, Twitter by triple digits</li>
+	      <li>Message Discipline</em> – Evaluated and managed content across all channels to maintain consistent brand presence</li>
+	    </ul>
+	  </p>
+
+	  <h3>Game Informer – Editor | September 2003 – September 2013</h3>
+	  <p><em>PC Editor, 2012-2013; Sr. Associate Editor 2010-2012, Assc. Editor 2003-2010</em>
+	  <p>
+	    <ul>
+	      <li>Collaborative Development</em> – Worked with graphic artists, video producers, etc. to create top-tier multimedia digital and traditional content for core and growth audiences </li>
+	      <li>Content Management</em> – Developed direction of and led all Windows gaming content creation</li>
+	      <li>On-site Leadership</em> – Traveled domestic and international to lead cover-story and feature teams in creating multimedia content with strategic partners</li>
+	      <li>Editing</em> – Edited Game Informer content to brand-consistent tone/style and AP Style guidelines</li>
+	      <li>Brand Launch Partnerships</em> – Partnered with major external partners (Electronic Arts, Activision Blizzard, Take-Two Interactive, etc.) on earned-media portion of significant brand launches: Call of Duty, XCOM, Dishonored, The Witcher 3: Wild Hunt, and more</li>
+	    </ul>
+	  </p>
+
+
+</body>
+</html>
