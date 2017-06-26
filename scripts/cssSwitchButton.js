@@ -9,14 +9,14 @@
 
   function enableLight() {
     var stylesheet = document.getElementById("stylesheet");
-    stylesheet.setAttribute('href', "solarized_light.css");
-    document.getElementById("buttonImage").src = "lightswitch_70px_on.png";
+    stylesheet.setAttribute('href', "styles/solarized_light.css");
+    document.getElementById("buttonImage").src = "assets/lightswitch_70px_on.png";
     currentStyle = "light";
   }
 
   function enableDark() {
     var stylesheet = document.getElementById("stylesheet");
-    stylesheet.setAttribute('href', "solarized_dark.css");
-    document.getElementById("buttonImage").src = "lightswitch_70px_off.png";
+    stylesheet.setAttribute('href', "styles/solarized_dark.css");
+    document.getElementById("buttonImage").src = "assets/lightswitch_70px_off.png";
     currentStyle = "dark";
   }
