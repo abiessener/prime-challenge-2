@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Bullet Point Data Parser</title>
+  <meta name="description" content="Bullet point data parser for easily inputting resume text">
+  <meta name="author" content="Adam Biessener">
+
+  <link rel="stylesheet" href="solarized_light.css" id="stylesheet">
+</head>
+
+
+<body>
+  <h1>Bullet Point Data Parser</h1>
+  <form>
+  	Dump your ugly bullet points here: <br>
+  	<textarea rows="20" cols="100" id="rawText" size="40" > example blah blah</textarea> <br><br>
+  	<!-- <button type="button" onclick="inputDataProducer()" >Submit - Producer</button> -->
+  	<button type="button" onclick="inputDataProducer()" >Submit - Producer</button>
+  	<button type="button" onclick="inputDataContent()" >Submit - Content</button>
+	<br><br><input type="reset">
+  </form>
+
+  <p id="test"></p>
+<!-- <script type="text/javascript" src="resumeStringParser.js" ></script>
+ -->
+<script>
+function inputDataProducer() {
+	var startPos = 2
+	var endPos = 0
+	var lineNumber = 0
+	var maxLines = 0
+	var currentLineData = ""
+
+	// while (bulletFound == 0) {
+	// 	startPos = endPos + 1;
+	// 	if (rawData.charCodeAt(startPos) == 0x8226 {
+	// 		bulletFound = 1;
+	// 		endPos = startPos + 1;
+	// 		while (newlineFound == 0) {
+	// 			if (rawData.charCodeAt(endPos) == 0x000A {
+	// 				newlineFound = 1;
+	// 			} else endPos = endPos + 1;
+	// 		}
+
+	// 	}
+	// }
+	
+	var rawData = document.getElementById('rawText').value;
+	var rawArray = rawData.split("\n");
+
+	maxLines = rawArray.length;
+
+	lineNumber = 5;
+	currentLineData = rawArray[lineNumber].slice(2)
+
+	// while (lineNumber <= maxLines) {
+
+	// }
+
+	//window.alert(rawArray[3]);
+	window.alert(currentLineData);
+	document.getElementById("test").innerHTML = maxLines;
+
+}
+
+</script>
+
+
+  </body>
+</html>
