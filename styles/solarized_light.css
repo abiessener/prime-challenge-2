@@ -43,6 +43,7 @@ a:hover {
 }
 h1 {
   font-size: 2em;
+  text-align: center;
 }
 abbr[title] {
   border-bottom: 1px dotted;
@@ -207,7 +208,6 @@ h4,
 h5,
 h6 {
   color: #586e75;
-  margin: 0 2%;
 }
 pre {
   background-color: #fdf6e3;
@@ -221,7 +221,6 @@ pre code {
 }
 h1 {
   font-size: 2.8em;
-  text-align: center;
 }
 h2 {
   font-size: 2.4em;
@@ -237,6 +236,10 @@ h5 {
 }
 h6 {
   font-size: 1.15em;
+}
+div.subhead {
+  color:#586e75;
+  text-align:center
 }
 .tag {
   background-color: #eee8d5;
@@ -304,18 +307,13 @@ h6 {
   background-color: #859900;
 }
 
-div.subhead {
-  color:#586e75;
-  text-align:center
-}
-
 /* Style the tab */
 div.tab {
   overflow: hidden;
   border: 1px solid #93a1a1;
   background-color: #eee8d5;
   width: 50%;
-  margin: 12px 26% 0;
+  margin: 0 26%;
   align-content: center;
 }
 
@@ -349,21 +347,6 @@ div.tab button.active {
   padding: 6px 12px;
   border: 1px solid #93a1a1;
   width: 60%;
-  margin: 0 20% 12px 20%;
+  margin: 0 20%;
   text-align: center;
-}
-
-ul {
-  list-style-type: none;
-  margin: 2 0;
-  padding: 0;
-}
-
-li {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-div.maintext {
-  margin: 6px 2%;
 }
